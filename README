@@ -1,4 +1,12 @@
 A modified version of https://github.com/Ultimaker/Ultimaker2Marlin configured to work with DMv2 3D Printer.
 
-*Know Issues*
-LCD Panel control does not work and is disabled.
+This firmware does not store information about how much has been printed and how long the printer has been in operation for. If this
+is important then maybe this firmware is not for you.
+
+You will need to make a note of all you EEPROM settings for your current configuration, this firmware has a bare-bones configuration
+for proper operation once you have uploaded the firmware you will need to modify the EEPROM parameter prior to printing.
+
+Machine profiles for a DMv2 with Heated bed are provided - for both Repetier-Host and Cura.
+
+*Known Issues*
+LCD Panel control does not work and is currently disabled. 

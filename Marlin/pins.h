@@ -397,28 +397,6 @@
 
   #if MOTHERBOARD == 33
     #define FAN_PIN            9 // (Sprinter config)
-//lcd pins
-
-    define LCD_PINS_RS 16 //[RAMPS14-SMART-ADAPTER]
-    define LCD_PINS_ENABLE 17 //[RAMPS14-SMART-ADAPTER]
-    define LCD_PINS_D4 23 //[RAMPS14-SMART-ADAPTER]
-    define LCD_PINS_D5 25 //[RAMPS14-SMART-ADAPTER]
-    define LCD_PINS_D6 27 //[RAMPS14-SMART-ADAPTER]
-    define LCD_PINS_D7 29 //[RAMPS14-SMART-ADAPTER] 
-
-//encoder pins
-
-    define BTN_EN1 31 //[RAMPS14-SMART-ADAPTER]
-    define BTN_EN2 33 //[RAMPS14-SMART-ADAPTER]
-    define BTN_ENC 35 //[RAMPS14-SMART-ADAPTER] 
-
-//beeper
-
-    define BEEPER 37 //[RAMPS14-SMART-ADAPTER] / 37 = enabled; -1 = dissabled / (if you don't like the beep sound ;-) 
-
-//SD card detect pin
-
-    define SDCARDDETECT 49 //[RAMPS14-SMART-ADAPTER] 
   #else
     #define FAN_PIN            4 // IO pin. Buffer needed
   #endif
@@ -477,9 +455,9 @@
     #endif
   #endif
 
-  #ifdef ULTRA_LCD
+  #ifdef ULTRA_LCD    //enabled with #define REPRAP_DISCOUNT_SMART_CONTROLLER in configuration.h
 
-    #ifdef NEWPANEL
+    #ifdef NEWPANEL  //enabled with #define REPRAP_DISCOUNT_SMART_CONTROLLER in configuration.h
       #define LCD_PINS_RS 16
       #define LCD_PINS_ENABLE 17
       #define LCD_PINS_D4 23

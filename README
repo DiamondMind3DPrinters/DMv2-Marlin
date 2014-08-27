@@ -8,5 +8,4 @@ for proper operation once you have uploaded the firmware you will need to modify
 
 Machine profiles for a DMv2 with Heated bed are provided - for both Repetier-Host and Cura.
 
-*Known Issues*
-LCD Panel control does not work and is currently disabled. 
+LCD Panel control is currently disabled - replace the configuration.h file with the Configuration.reprapdiscount_smartlcd file in the Examples directory.
